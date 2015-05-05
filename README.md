@@ -15,7 +15,7 @@ sudo mkdir -p /var/log/dokku
 sudo chown dokku:dokku /var/log/dokku
 
 # Install the plugin:
-git clone https://github.com/sehrope/dokku-logging-supervisord.git /var/lib/dokku/plugins/logging-supervisord
+git clone https://github.com/toddbluhm/dokku-logging-supervisord.git /var/lib/dokku/plugins/logging-supervisord
 sudo dokku plugins-install
 ```
 
@@ -80,6 +80,8 @@ Adding the `SCALE` file is done by copying it into the container. This adds anot
 ## Thanks
 
 Thanks to [dokku-supervisord](https://github.com/statianzo/dokku-supervisord) and [dokku-persistent-storage](https://github.com/dyson/dokku-persistent-storage) as this plugin is really a combination of those two.
+
+Thanks to [dokku-logging-supervisord](https://github.com/sehrope/dokku-logging-supervisord) for the original creation this fork is based off of.
 
 ## License
 
